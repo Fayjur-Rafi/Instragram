@@ -11,7 +11,7 @@ const useGetAllMessages = () => {
       try {
         axios.defaults.withCredentials = true;
         const res = await axios.get(
-          `http://localhost:3000/api/v1/message/all/${selectedUser?._id}`,
+          `https://instragram-c3vx.onrender.com/api/v1/message/all/${selectedUser?._id}`,
         );
         if (res.data.success) {
           dispatch(setMessages(res.data.messages));

@@ -10,7 +10,7 @@ const useGetMessages = () => {
     const fetchMessages = async () => {
       try {
         const res = await axios.get(
-          `http://localhost:3000/api/v1/message/all/${selectedUser?._id}`,
+          `https://instragram-c3vx.onrender.com/api/v1/message/all/${selectedUser?._id}`,
           { withCredentials: true },
         );
         if (res.data.success) {

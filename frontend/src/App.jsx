@@ -23,7 +23,7 @@ const App = () => {
   const dispatch = useDispatch();
   useEffect(() => {
     if (user) {
-      const socket = io("http://localhost:3000", {
+      const socket = io("https://instragram-c3vx.onrender.com", {
         query: {
           userId: user._id,
         },

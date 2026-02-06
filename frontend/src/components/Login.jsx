@@ -33,7 +33,7 @@ const Login = () => {
 
     try {
       const res = await axios.post(
-        "http://localhost:3000/api/v1/user/login",
+        "https://instragram-c3vx.onrender.com/api/v1/user/login",
         input,
         {
           headers: {
